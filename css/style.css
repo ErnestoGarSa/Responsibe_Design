@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer{
+    padding: 0 2rem;
+}
+
+main{
+    background-image: url("images/bg-mobile.svg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.logo{
+    width: 45%;
+    margin-top: 1rem;   
+    padding-bottom: 3.5rem;
+    padding-top: 1rem;
+}
+
+.img{
+    width: 97%;
+    margin-left: .5rem;
+    padding-bottom: 3rem;
+}
+
+.text{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.info .title{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 1rem;
+}
+
+.info .content{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: .5rem;
+    color: rgb(242,239,248);
+    padding-bottom: 1rem;
+}
+
+button{
+   
+    width: 70%;
+    align-self: center;
+    height: 3rem;
+    border: 1px solid hsl(257, 40%, 49%);
+    border-radius: 2rem;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    margin-bottom: 4rem;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sm{
+    height: 2rem;
+    width: 2rem;
+    border:1px solid white;
+    border-radius: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+@media screen and (min-width: 992px){
+    .main{
+        display: flex;
+        background-image: url("images/bg-desktop.svg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+    }
+
+    .images{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 125%;
+    }
+
+    .logo{
+        width: 30%;
+        margin-top: 2rem;
+    }
+
+    .img{
+        justify-self: center;
+        align-items: center;
+        padding-top: 2rem;
+        
+    }
+
+    .text{
+        width: 75%;
+        text-align: left;
+        margin-top: 14rem;
+    }
+    
+    .text .title{
+        text-align: start;
+        font-size: 2.5rem;
+    }
+
+    .text .content{
+        text-align: start;
+        color: rgb(242,239,248);
+        font-size: 1rem;
+        padding-top: 3rem;
+    }
+
+    button{
+        width: 40%;
+        height: 4rem;
+        font-size: 1rem;
+    }
+    
+
+    .social{
+        padding-top: 7rem;
+        justify-content: flex-end;
+    }
+
+    button:hover{
+        color: white;
+        background-color: hsl(300, 69%, 71%);
+        transition: all .5s ease;
+        transform: scale(1.2);
+    }
+
+    .social i:hover {
+        color: hsl(300, 69%, 71%);
+        border: 1px solid hsl(300, 69%, 71%);
+        transition: all .5s ease;
+        transform: scale(1.2);
+    }
+
+
+}
